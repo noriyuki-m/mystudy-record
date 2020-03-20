@@ -1,0 +1,12 @@
+<p>一覧画面</p>
+<% @users.each do |user| %>
+ <p>
+  <%= user.name %>
+  <%= user.age %>
+  <%= link_to '削除ボタン', "/users/#{user.id}", method: :delete, data: {confirm: "削除しても良いですか？"} %>
+  <%= link_to '編集', "/users/#{user.id}/edit", method: :get %>
+  </p>
+ </p>
+ <% end %>
+
+<%= link_to '投稿画面へ', '/users/new'%>
