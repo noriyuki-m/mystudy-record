@@ -1,0 +1,5 @@
+<p>新規登録画面</p>
+<%= form_for @user, url: '/users', html: {method: :post} do |f| %>
+<%= f.text_field :name%>
+<%= f.submit %>
+<% end %>
