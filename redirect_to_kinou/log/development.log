@@ -1,0 +1,840 @@
+Started GET "/" for ::1 at 2020-03-21 10:05:00 +0900
+  
+ActiveRecord::NoDatabaseError (Unknown database 'sample17_development'):
+  
+.bundle/ruby/2.6.0/gems/activerecord-5.2.4.2/lib/active_record/connection_adapters/mysql2_adapter.rb:26:in `rescue in mysql2_connection'
+.bundle/ruby/2.6.0/gems/activerecord-5.2.4.2/lib/active_record/connection_adapters/mysql2_adapter.rb:12:in `mysql2_connection'
+.bundle/ruby/2.6.0/gems/activerecord-5.2.4.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:830:in `new_connection'
+.bundle/ruby/2.6.0/gems/activerecord-5.2.4.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:874:in `checkout_new_connection'
+.bundle/ruby/2.6.0/gems/activerecord-5.2.4.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:853:in `try_to_checkout_new_connection'
+.bundle/ruby/2.6.0/gems/activerecord-5.2.4.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:814:in `acquire_connection'
+.bundle/ruby/2.6.0/gems/activerecord-5.2.4.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:538:in `checkout'
+.bundle/ruby/2.6.0/gems/activerecord-5.2.4.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:382:in `connection'
+.bundle/ruby/2.6.0/gems/activerecord-5.2.4.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:1033:in `retrieve_connection'
+.bundle/ruby/2.6.0/gems/activerecord-5.2.4.2/lib/active_record/connection_handling.rb:118:in `retrieve_connection'
+.bundle/ruby/2.6.0/gems/activerecord-5.2.4.2/lib/active_record/connection_handling.rb:90:in `connection'
+.bundle/ruby/2.6.0/gems/activerecord-5.2.4.2/lib/active_record/migration.rb:554:in `call'
+.bundle/ruby/2.6.0/gems/actionpack-5.2.4.2/lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+.bundle/ruby/2.6.0/gems/activesupport-5.2.4.2/lib/active_support/callbacks.rb:98:in `run_callbacks'
+.bundle/ruby/2.6.0/gems/actionpack-5.2.4.2/lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+.bundle/ruby/2.6.0/gems/actionpack-5.2.4.2/lib/action_dispatch/middleware/executor.rb:14:in `call'
+.bundle/ruby/2.6.0/gems/actionpack-5.2.4.2/lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+.bundle/ruby/2.6.0/gems/web-console-3.7.0/lib/web_console/middleware.rb:135:in `call_app'
+.bundle/ruby/2.6.0/gems/web-console-3.7.0/lib/web_console/middleware.rb:30:in `block in call'
+.bundle/ruby/2.6.0/gems/web-console-3.7.0/lib/web_console/middleware.rb:20:in `catch'
+.bundle/ruby/2.6.0/gems/web-console-3.7.0/lib/web_console/middleware.rb:20:in `call'
+.bundle/ruby/2.6.0/gems/actionpack-5.2.4.2/lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+.bundle/ruby/2.6.0/gems/railties-5.2.4.2/lib/rails/rack/logger.rb:38:in `call_app'
+.bundle/ruby/2.6.0/gems/railties-5.2.4.2/lib/rails/rack/logger.rb:26:in `block in call'
+.bundle/ruby/2.6.0/gems/activesupport-5.2.4.2/lib/active_support/tagged_logging.rb:71:in `block in tagged'
+.bundle/ruby/2.6.0/gems/activesupport-5.2.4.2/lib/active_support/tagged_logging.rb:28:in `tagged'
+.bundle/ruby/2.6.0/gems/activesupport-5.2.4.2/lib/active_support/tagged_logging.rb:71:in `tagged'
+.bundle/ruby/2.6.0/gems/railties-5.2.4.2/lib/rails/rack/logger.rb:26:in `call'
+.bundle/ruby/2.6.0/gems/sprockets-rails-3.2.1/lib/sprockets/rails/quiet_assets.rb:13:in `call'
+.bundle/ruby/2.6.0/gems/actionpack-5.2.4.2/lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+.bundle/ruby/2.6.0/gems/actionpack-5.2.4.2/lib/action_dispatch/middleware/request_id.rb:27:in `call'
+.bundle/ruby/2.6.0/gems/rack-2.2.2/lib/rack/method_override.rb:24:in `call'
+.bundle/ruby/2.6.0/gems/rack-2.2.2/lib/rack/runtime.rb:22:in `call'
+.bundle/ruby/2.6.0/gems/activesupport-5.2.4.2/lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+.bundle/ruby/2.6.0/gems/actionpack-5.2.4.2/lib/action_dispatch/middleware/executor.rb:14:in `call'
+.bundle/ruby/2.6.0/gems/actionpack-5.2.4.2/lib/action_dispatch/middleware/static.rb:127:in `call'
+.bundle/ruby/2.6.0/gems/rack-2.2.2/lib/rack/sendfile.rb:110:in `call'
+.bundle/ruby/2.6.0/gems/railties-5.2.4.2/lib/rails/engine.rb:524:in `call'
+.bundle/ruby/2.6.0/gems/puma-3.12.4/lib/puma/configuration.rb:227:in `call'
+.bundle/ruby/2.6.0/gems/puma-3.12.4/lib/puma/server.rb:675:in `handle_request'
+.bundle/ruby/2.6.0/gems/puma-3.12.4/lib/puma/server.rb:476:in `process_client'
+.bundle/ruby/2.6.0/gems/puma-3.12.4/lib/puma/server.rb:334:in `block in run'
+.bundle/ruby/2.6.0/gems/puma-3.12.4/lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  [1m[35m (2.7ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ .bundle/ruby/2.6.0/bin/rake:23
+  [1m[35m (31.1ms)[0m  [1m[35mCREATE DATABASE `sample17_development` DEFAULT CHARACTER SET `utf8`[0m
+  ↳ .bundle/ruby/2.6.0/bin/rake:23
+  [1m[35m (4.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ .bundle/ruby/2.6.0/bin/rake:23
+  [1m[35m (14.4ms)[0m  [1m[35mCREATE DATABASE `sample17_test` DEFAULT CHARACTER SET `utf8`[0m
+  ↳ .bundle/ruby/2.6.0/bin/rake:23
+Started GET "/" for ::1 at 2020-03-21 10:05:20 +0900
+  [1m[35m (4.1ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ .bundle/ruby/2.6.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+Processing by Rails::WelcomeController#index as HTML
+  Rendering .bundle/ruby/2.6.0/gems/railties-5.2.4.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered .bundle/ruby/2.6.0/gems/railties-5.2.4.2/lib/rails/templates/rails/welcome/index.html.erb (3.9ms)
+Completed 200 OK in 19ms (Views: 10.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-03-21 10:25:42 +0900
+  [1m[35m (4.6ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ .bundle/ruby/2.6.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+.bundle/ruby/2.6.0/gems/activerecord-5.2.4.2/lib/active_record/migration.rb:579:in `check_pending!'
+.bundle/ruby/2.6.0/gems/activerecord-5.2.4.2/lib/active_record/migration.rb:556:in `call'
+.bundle/ruby/2.6.0/gems/actionpack-5.2.4.2/lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+.bundle/ruby/2.6.0/gems/activesupport-5.2.4.2/lib/active_support/callbacks.rb:98:in `run_callbacks'
+.bundle/ruby/2.6.0/gems/actionpack-5.2.4.2/lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+.bundle/ruby/2.6.0/gems/actionpack-5.2.4.2/lib/action_dispatch/middleware/executor.rb:14:in `call'
+.bundle/ruby/2.6.0/gems/actionpack-5.2.4.2/lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+.bundle/ruby/2.6.0/gems/web-console-3.7.0/lib/web_console/middleware.rb:135:in `call_app'
+.bundle/ruby/2.6.0/gems/web-console-3.7.0/lib/web_console/middleware.rb:30:in `block in call'
+.bundle/ruby/2.6.0/gems/web-console-3.7.0/lib/web_console/middleware.rb:20:in `catch'
+.bundle/ruby/2.6.0/gems/web-console-3.7.0/lib/web_console/middleware.rb:20:in `call'
+.bundle/ruby/2.6.0/gems/actionpack-5.2.4.2/lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+.bundle/ruby/2.6.0/gems/railties-5.2.4.2/lib/rails/rack/logger.rb:38:in `call_app'
+.bundle/ruby/2.6.0/gems/railties-5.2.4.2/lib/rails/rack/logger.rb:26:in `block in call'
+.bundle/ruby/2.6.0/gems/activesupport-5.2.4.2/lib/active_support/tagged_logging.rb:71:in `block in tagged'
+.bundle/ruby/2.6.0/gems/activesupport-5.2.4.2/lib/active_support/tagged_logging.rb:28:in `tagged'
+.bundle/ruby/2.6.0/gems/activesupport-5.2.4.2/lib/active_support/tagged_logging.rb:71:in `tagged'
+.bundle/ruby/2.6.0/gems/railties-5.2.4.2/lib/rails/rack/logger.rb:26:in `call'
+.bundle/ruby/2.6.0/gems/sprockets-rails-3.2.1/lib/sprockets/rails/quiet_assets.rb:13:in `call'
+.bundle/ruby/2.6.0/gems/actionpack-5.2.4.2/lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+.bundle/ruby/2.6.0/gems/actionpack-5.2.4.2/lib/action_dispatch/middleware/request_id.rb:27:in `call'
+.bundle/ruby/2.6.0/gems/rack-2.2.2/lib/rack/method_override.rb:24:in `call'
+.bundle/ruby/2.6.0/gems/rack-2.2.2/lib/rack/runtime.rb:22:in `call'
+.bundle/ruby/2.6.0/gems/activesupport-5.2.4.2/lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+.bundle/ruby/2.6.0/gems/actionpack-5.2.4.2/lib/action_dispatch/middleware/executor.rb:14:in `call'
+.bundle/ruby/2.6.0/gems/actionpack-5.2.4.2/lib/action_dispatch/middleware/static.rb:127:in `call'
+.bundle/ruby/2.6.0/gems/rack-2.2.2/lib/rack/sendfile.rb:110:in `call'
+.bundle/ruby/2.6.0/gems/railties-5.2.4.2/lib/rails/engine.rb:524:in `call'
+.bundle/ruby/2.6.0/gems/puma-3.12.4/lib/puma/configuration.rb:227:in `call'
+.bundle/ruby/2.6.0/gems/puma-3.12.4/lib/puma/server.rb:675:in `handle_request'
+.bundle/ruby/2.6.0/gems/puma-3.12.4/lib/puma/server.rb:476:in `process_client'
+.bundle/ruby/2.6.0/gems/puma-3.12.4/lib/puma/server.rb:334:in `block in run'
+.bundle/ruby/2.6.0/gems/puma-3.12.4/lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  [1m[35m (2.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ .bundle/ruby/2.6.0/bin/rake:23
+  [1m[35m (160.8ms)[0m  [1m[35mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL PRIMARY KEY)[0m
+  ↳ .bundle/ruby/2.6.0/bin/rake:23
+  [1m[35m (41.9ms)[0m  [1m[35mCREATE TABLE `ar_internal_metadata` (`key` varchar(255) NOT NULL PRIMARY KEY, `value` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ .bundle/ruby/2.6.0/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT GET_LOCK('7913575565745420690', 0)[0m
+  ↳ .bundle/ruby/2.6.0/bin/rake:23
+  [1m[35m (5.8ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ .bundle/ruby/2.6.0/bin/rake:23
+Migrating to CreateUsers (20200321010549)
+  [1m[35m (25.1ms)[0m  [1m[35mCREATE TABLE `users` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `name` varchar(255), `age` int, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ db/migrate/20200321010549_create_users.rb:3
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ .bundle/ruby/2.6.0/bin/rake:23
+  [1m[36mActiveRecord::SchemaMigration Create (2.4ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20200321010549')[0m
+  ↳ .bundle/ruby/2.6.0/bin/rake:23
+  [1m[35m (3.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ .bundle/ruby/2.6.0/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (4.0ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  ↳ .bundle/ruby/2.6.0/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ .bundle/ruby/2.6.0/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Create (1.8ms)[0m  [1m[32mINSERT INTO `ar_internal_metadata` (`key`, `value`, `created_at`, `updated_at`) VALUES ('environment', 'development', '2020-03-21 01:26:00', '2020-03-21 01:26:00')[0m
+  ↳ .bundle/ruby/2.6.0/bin/rake:23
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ .bundle/ruby/2.6.0/bin/rake:23
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT RELEASE_LOCK('7913575565745420690')[0m
+  ↳ .bundle/ruby/2.6.0/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ .bundle/ruby/2.6.0/bin/rake:23
+Started GET "/" for ::1 at 2020-03-21 10:26:06 +0900
+  [1m[35m (2.9ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ .bundle/ruby/2.6.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ .bundle/ruby/2.6.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+Processing by Rails::WelcomeController#index as HTML
+  Rendering .bundle/ruby/2.6.0/gems/railties-5.2.4.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered .bundle/ruby/2.6.0/gems/railties-5.2.4.2/lib/rails/templates/rails/welcome/index.html.erb (4.7ms)
+Completed 200 OK in 22ms (Views: 12.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for ::1 at 2020-03-21 10:26:11 +0900
+  
+SyntaxError (/Users/noriyukim/Desktop/t/sample17/app/controllers/users_controller.rb:22: syntax error, unexpected end-of-input, expecting end):
+  
+app/controllers/users_controller.rb:22: syntax error, unexpected end-of-input, expecting end
+Started GET "/users/new" for ::1 at 2020-03-21 10:26:50 +0900
+  
+NoMethodError (undefined method `destroy' for #<ActionDispatch::Routing::Mapper:0x00007ff0954b0ba8>):
+  
+config/routes.rb:5:in `block in <main>'
+config/routes.rb:1:in `<main>'
+Started GET "/users/new" for ::1 at 2020-03-21 10:27:12 +0900
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (29.8ms)
+Completed 200 OK in 931ms (Views: 889.9ms | ActiveRecord: 25.7ms)
+
+
+Started POST "/users" for ::1 at 2020-03-21 10:27:21 +0900
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"x6WX5bLoRR4t3RXfvugQ+TW/GQPFtVXDm9+IYiH6X9ZS/iXCET/oik2Y6Vj/ttpMqfbJKfiU/R+vHrmLcP9GXw==", "user"=>{"name"=>"aaaaaaa"}, "commit"=>"Create User"}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:7
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO `users` (`name`, `created_at`, `updated_at`) VALUES ('aaaaaaa', '2020-03-21 01:27:21', '2020-03-21 01:27:21')[0m
+  ↳ app/controllers/users_controller.rb:7
+  [1m[35m (1.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:7
+  Rendering users/create.html.erb within layouts/application
+  Rendered users/create.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 29ms (Views: 17.4ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/users" for ::1 at 2020-03-21 10:27:22 +0900
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (3.0ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/index.html.erb:2
+  Rendered users/index.html.erb within layouts/application (9.5ms)
+Completed 200 OK in 108ms (Views: 101.6ms | ActiveRecord: 3.0ms)
+
+
+Started DELETE "/users/1" for ::1 at 2020-03-21 10:27:25 +0900
+Processing by UsersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"O3VDT1AX+nU2A/dfnOUf4MTrE18Fo+C2Ma5J4hNmZ8yuLvFo88BX4VZGC9jdu9VVWKLDdTiCSGoFb3gLQmN+RQ==", "id"=>"1"}
+  [1m[36mUser Load (2.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:15
+  [1m[36mUser Destroy (6.9ms)[0m  [1m[31mDELETE FROM `users` WHERE `users`.`id` = 1[0m
+  ↳ app/controllers/users_controller.rb:16
+  Rendering users/destroy.html.erb within layouts/application
+  Rendered users/destroy.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 33ms (Views: 16.1ms | ActiveRecord: 9.2ms)
+
+
+Started GET "/users" for ::1 at 2020-03-21 10:27:26 +0900
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/index.html.erb:2
+  Rendered users/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 37ms (Views: 33.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/users" for ::1 at 2020-03-21 10:31:01 +0900
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/index.html.erb:2
+  Rendered users/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 46ms (Views: 27.4ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/users/new" for ::1 at 2020-03-21 10:31:03 +0900
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 59ms (Views: 28.8ms | ActiveRecord: 19.5ms)
+
+
+Started POST "/users" for ::1 at 2020-03-21 10:31:05 +0900
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Y4dCTJlhoH95dA7slhrLyIX8+bXghNfuZBc4tM7iCQiHjMqwrG1T+heuLzNrHsPaTyJRQHS8yLdWFlw51k94UA==", "user"=>{"name"=>"田中"}, "commit"=>"Create User"}
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:7
+  [1m[36mUser Create (3.1ms)[0m  [1m[32mINSERT INTO `users` (`name`, `created_at`, `updated_at`) VALUES ('田中', '2020-03-21 01:31:05', '2020-03-21 01:31:05')[0m
+  ↳ app/controllers/users_controller.rb:7
+  [1m[35m (1.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:7
+  Rendering users/create.html.erb within layouts/application
+  Rendered users/create.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 40ms (Views: 27.2ms | ActiveRecord: 5.6ms)
+
+
+Started GET "/users" for ::1 at 2020-03-21 10:31:06 +0900
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/index.html.erb:2
+  Rendered users/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 32ms (Views: 27.9ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/users/2/edit" for ::1 at 2020-03-21 10:31:08 +0900
+Processing by UsersController#edit as HTML
+  Parameters: {"authenticity_token"=>"PQ7MGLWubbUzk5Bw4WGKthAsHYoRMHwY8kLsH89M8ZaoVX4/FnnAIVPWbPegP0ADjGXNoCwR1MTGg932nknoHw==", "id"=>"2"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:20
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/edit.html.erb within layouts/application (224.0ms)
+Completed 500 Internal Server Error in 231ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `user' for #<#<Class:0x00007ff094c2c590>:0x00007ff099411978>
+Did you mean?  super):
+    1: <h1>hello world</h1>
+    2: <%= form_for user, url: "/users/update", html:{method: :patch} do |f| %>
+    3: <%= f.text_field :name %>
+    4: <%= f.submit %>
+    5: <% end %>
+  
+app/views/users/edit.html.erb:2:in `_app_views_users_edit_html_erb__3835350685956725558_70335670032200'
+Started GET "/users/2/edit" for ::1 at 2020-03-21 10:35:20 +0900
+Processing by UsersController#edit as HTML
+  Parameters: {"authenticity_token"=>"PQ7MGLWubbUzk5Bw4WGKthAsHYoRMHwY8kLsH89M8ZaoVX4/FnnAIVPWbPegP0ADjGXNoCwR1MTGg932nknoHw==", "id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:20
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/edit.html.erb within layouts/application (246.8ms)
+Completed 500 Internal Server Error in 276ms (ActiveRecord: 11.2ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `user' for #<#<Class:0x00007ff094c2e570>:0x00007ff094c2c298>
+Did you mean?  super):
+    1: <h1>hello world</h1>
+    2: <%= form_for user, url: "/users/#{user.id}", html:{method: :patch} do |f| %>
+    3: <%= f.text_field :name %>
+    4: <%= f.submit %>
+    5: <% end %>
+  
+app/views/users/edit.html.erb:2:in `_app_views_users_edit_html_erb__3835350685956725558_70335632341980'
+Started GET "/users/2/edit" for ::1 at 2020-03-21 10:35:27 +0900
+Processing by UsersController#edit as HTML
+  Parameters: {"authenticity_token"=>"PQ7MGLWubbUzk5Bw4WGKthAsHYoRMHwY8kLsH89M8ZaoVX4/FnnAIVPWbPegP0ADjGXNoCwR1MTGg932nknoHw==", "id"=>"2"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:20
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/edit.html.erb within layouts/application (205.7ms)
+Completed 500 Internal Server Error in 210ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `user' for #<#<Class:0x00007ff094c2e570>:0x00007ff0994d1a70>
+Did you mean?  super):
+    1: <h1>hello world</h1>
+    2: <%= form_for user, url: "/users/#{user.id}", html:{method: :patch} do |f| %>
+    3: <%= f.text_field :name %>
+    4: <%= f.submit %>
+    5: <% end %>
+  
+app/views/users/edit.html.erb:2:in `_app_views_users_edit_html_erb__3835350685956725558_70335670425760'
+Started GET "/users/2/edit" for ::1 at 2020-03-21 10:36:47 +0900
+Processing by UsersController#edit as HTML
+  Parameters: {"authenticity_token"=>"PQ7MGLWubbUzk5Bw4WGKthAsHYoRMHwY8kLsH89M8ZaoVX4/FnnAIVPWbPegP0ADjGXNoCwR1MTGg932nknoHw==", "id"=>"2"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:20
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/edit.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 34ms (Views: 14.5ms | ActiveRecord: 9.8ms)
+
+
+Started PATCH "/users/2" for ::1 at 2020-03-21 10:36:49 +0900
+Processing by UsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nVxEFIVbOaedxj2tHHDNdQWrmxdqp9Ph2kVLHwinx5sIB/YzJoyUM/2DwSpdLgfAmeJLPVeGez3uhHr2WaLeEg==", "user"=>{"name"=>"田中"}, "commit"=>"Update User", "id"=>"2"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:24
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:25
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:25
+  Rendering users/update.html.erb within layouts/application
+  Rendered users/update.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 19ms (Views: 13.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users" for ::1 at 2020-03-21 10:36:50 +0900
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/index.html.erb:2
+  Rendered users/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 50ms (Views: 46.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/users/2/edit" for ::1 at 2020-03-21 10:36:51 +0900
+Processing by UsersController#edit as HTML
+  Parameters: {"authenticity_token"=>"pybgyXEYsrqXY1uEkmp/CYn0mlFQCi12H7KJL/N9RcUyfVLu0s8fLvcmpwPTNLW8Fb1Ke20rhaorc7jGonhcTA==", "id"=>"2"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:20
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/edit.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 17ms (Views: 14.4ms | ActiveRecord: 0.3ms)
+
+
+Started PATCH "/users/2" for ::1 at 2020-03-21 10:36:56 +0900
+Processing by UsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nk5+vK1twcqhlbnpn5neXuAZSS/pvmhcEANt89aox+QLFcybDrpsXsHQRW7exxTrfFCZBdSfwIAkwlwah63ebQ==", "user"=>{"name"=>"田中やすし"}, "commit"=>"Update User", "id"=>"2"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:24
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:25
+  [1m[36mUser Update (7.6ms)[0m  [1m[33mUPDATE `users` SET `name` = '田中やすし', `updated_at` = '2020-03-21 01:36:56' WHERE `users`.`id` = 2[0m
+  ↳ app/controllers/users_controller.rb:25
+  [1m[35m (4.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:25
+  Rendering users/update.html.erb within layouts/application
+  Rendered users/update.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 35ms (Views: 15.4ms | ActiveRecord: 13.3ms)
+
+
+Started GET "/users" for ::1 at 2020-03-21 10:36:59 +0900
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (2.5ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/index.html.erb:2
+  Rendered users/index.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 40ms (Views: 33.6ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/users/new" for ::1 at 2020-03-21 10:37:04 +0900
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 30ms (Views: 26.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2020-03-21 10:37:06 +0900
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"b5WF9VvBZ+VOwRS1XW82iTKg5tUb0hj/p5ZepHO7yzeLng0Jbs2UYCAbNWqgaz6b+H5OII/qB6aVlzopaxa6bw==", "user"=>{"name"=>"tanaka"}, "commit"=>"Create User"}
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:7
+  [1m[36mUser Create (3.3ms)[0m  [1m[32mINSERT INTO `users` (`name`, `created_at`, `updated_at`) VALUES ('tanaka', '2020-03-21 01:37:06', '2020-03-21 01:37:06')[0m
+  ↳ app/controllers/users_controller.rb:7
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:7
+  Rendering users/create.html.erb within layouts/application
+  Rendered users/create.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 27ms (Views: 17.8ms | ActiveRecord: 4.4ms)
+
+
+Started GET "/users" for ::1 at 2020-03-21 10:37:07 +0900
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/index.html.erb:2
+  Rendered users/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 44ms (Views: 39.1ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/users/new" for ::1 at 2020-03-21 10:37:08 +0900
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 32ms (Views: 29.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2020-03-21 10:37:10 +0900
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"hitrBQrzg9RMx4MSKhc7Vh3wcbcnK0nt5DaurTDRf+ZiIOP5P/9wUSIdos3XEzNE1y7ZQrMTVrTWN8ogKHwOvg==", "user"=>{"name"=>"匿名じゃない"}, "commit"=>"Create User"}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:7
+  [1m[36mUser Create (2.2ms)[0m  [1m[32mINSERT INTO `users` (`name`, `created_at`, `updated_at`) VALUES ('匿名じゃない', '2020-03-21 01:37:10', '2020-03-21 01:37:10')[0m
+  ↳ app/controllers/users_controller.rb:7
+  [1m[35m (1.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:7
+  Rendering users/create.html.erb within layouts/application
+  Rendered users/create.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 23ms (Views: 14.8ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/users" for ::1 at 2020-03-21 10:37:11 +0900
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (2.8ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/index.html.erb:2
+  Rendered users/index.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 34ms (Views: 28.4ms | ActiveRecord: 2.8ms)
+
+
+Started DELETE "/users/4" for ::1 at 2020-03-21 10:37:14 +0900
+Processing by UsersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"KdrCFe8yWs3VQaX541nfNsbeJDsszObRggfj++Z7HNS8gXAyTOX3WbUEWX6iBxWDWpf0ERHtTg22xtISt34FXQ==", "id"=>"4"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:15
+  [1m[36mUser Destroy (2.4ms)[0m  [1m[31mDELETE FROM `users` WHERE `users`.`id` = 4[0m
+  ↳ app/controllers/users_controller.rb:16
+  Rendering users/destroy.html.erb within layouts/application
+  Rendered users/destroy.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 19ms (Views: 13.3ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/users" for ::1 at 2020-03-21 10:37:15 +0900
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/index.html.erb:2
+  Rendered users/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 33ms (Views: 27.4ms | ActiveRecord: 0.7ms)
+
+
+Started DELETE "/users/3" for ::1 at 2020-03-21 10:37:18 +0900
+Processing by UsersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"1/OxwAv0xD3k8GTONM3lqPkbdJaBm5TuTzQAS7nFU+5CqAPnqCNpqYS1mEl1ky8dZVKkvLy6PDJ79TGi6MBKZw==", "id"=>"3"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:15
+  [1m[36mUser Destroy (5.0ms)[0m  [1m[31mDELETE FROM `users` WHERE `users`.`id` = 3[0m
+  ↳ app/controllers/users_controller.rb:16
+  Rendering users/destroy.html.erb within layouts/application
+  Rendered users/destroy.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 42ms (Views: 32.0ms | ActiveRecord: 5.4ms)
+
+
+Started GET "/users/" for ::1 at 2020-03-21 13:27:05 +0900
+  [1m[35m (9.0ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ .bundle/ruby/2.6.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ .bundle/ruby/2.6.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/index.html.erb:2
+  Rendered users/index.html.erb within layouts/application (45.2ms)
+Completed 200 OK in 316ms (Views: 269.2ms | ActiveRecord: 35.2ms)
+
+
+Started GET "/users/new" for ::1 at 2020-03-21 13:27:07 +0900
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (16.0ms)
+Completed 200 OK in 37ms (Views: 33.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2020-03-21 13:27:10 +0900
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6Z5dvn5kTRYhQWgBQpkYygLWRWGDey1Y2VWssf6xbZYNldVCS2i+k0+bSd6/nRDYyAjtlBdDMgHrVMg85hwczg==", "user"=>{"name"=>"tanaka"}, "commit"=>"Create User"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:7
+  [1m[36mUser Create (4.4ms)[0m  [1m[32mINSERT INTO `users` (`name`, `created_at`, `updated_at`) VALUES ('tanaka', '2020-03-21 04:27:10', '2020-03-21 04:27:10')[0m
+  ↳ app/controllers/users_controller.rb:7
+  [1m[35m (2.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:7
+  Rendering users/create.html.erb within layouts/application
+  Rendered users/create.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 59ms (Views: 47.0ms | ActiveRecord: 7.0ms)
+
+
+Started GET "/users" for ::1 at 2020-03-21 13:27:11 +0900
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/index.html.erb:2
+  Rendered users/index.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 34ms (Views: 30.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users/new" for ::1 at 2020-03-21 13:27:11 +0900
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 35ms (Views: 29.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2020-03-21 13:27:14 +0900
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8ICsHntXMfy5LBenX21F40OYtlMx+5rnKmGgdnCc7zEUiyTiTlvCedf2NniiaU3xiUYepqXDhb4YYMT7aDGeaQ==", "user"=>{"name"=>"相田みつお"}, "commit"=>"Create User"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:7
+  [1m[36mUser Create (4.2ms)[0m  [1m[32mINSERT INTO `users` (`name`, `created_at`, `updated_at`) VALUES ('相田みつお', '2020-03-21 04:27:14', '2020-03-21 04:27:14')[0m
+  ↳ app/controllers/users_controller.rb:7
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:7
+  Rendering users/create.html.erb within layouts/application
+  Rendered users/create.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 32ms (Views: 21.7ms | ActiveRecord: 5.4ms)
+
+
+Started GET "/users" for ::1 at 2020-03-21 13:27:16 +0900
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/index.html.erb:2
+  Rendered users/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 32ms (Views: 27.0ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/users/2/edit" for ::1 at 2020-03-21 13:27:17 +0900
+Processing by UsersController#edit as HTML
+  Parameters: {"authenticity_token"=>"q1Ku1oPxL4TnCkQpPeUeUfIqKOC937c9XsL5zFSkQEo+CRzxICaCEIdPuK58u9TkbmP4yoD+H+FqA8glBaFZww==", "id"=>"2"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:20
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/edit.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 20ms (Views: 12.9ms | ActiveRecord: 0.6ms)
+
+
+Started PATCH "/users/2" for ::1 at 2020-03-21 13:27:19 +0900
+Processing by UsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JmoEQDYhGubzDHnVFXDmQsimyugRp7Jb0+Ik1At6HLOzMbZnlfa3cpNJhVJULiz3VO8awiyGGofnIxU9Wn8FOg==", "user"=>{"name"=>"田中やす"}, "commit"=>"Update User", "id"=>"2"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:24
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:25
+  [1m[36mUser Update (2.3ms)[0m  [1m[33mUPDATE `users` SET `name` = '田中やす', `updated_at` = '2020-03-21 04:27:19' WHERE `users`.`id` = 2[0m
+  ↳ app/controllers/users_controller.rb:25
+  [1m[35m (1.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:25
+  Rendering users/update.html.erb within layouts/application
+  Rendered users/update.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 25ms (Views: 15.3ms | ActiveRecord: 4.5ms)
+
+
+Started GET "/users" for ::1 at 2020-03-21 13:27:21 +0900
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/index.html.erb:2
+  Rendered users/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 36ms (Views: 30.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users" for ::1 at 2020-03-21 13:29:34 +0900
+  
+SyntaxError (/Users/noriyukim/Desktop/t/sample17/app/controllers/users_controller.rb:8: syntax error, unexpected ':', expecting end
+    direct_to : => "index"
+              ^
+/Users/noriyukim/Desktop/t/sample17/app/controllers/users_controller.rb:18: syntax error, unexpected ':', expecting end
+    redirect_to : => "index"
+                ^
+/Users/noriyukim/Desktop/t/sample17/app/controllers/users_controller.rb:28: syntax error, unexpected ':', expecting end
+    redirect_to : => "index"
+                ^):
+  
+app/controllers/users_controller.rb:8: syntax error, unexpected ':', expecting end
+app/controllers/users_controller.rb:18: syntax error, unexpected ':', expecting end
+app/controllers/users_controller.rb:28: syntax error, unexpected ':', expecting end
+Started GET "/users" for ::1 at 2020-03-21 13:29:51 +0900
+  
+SyntaxError (/Users/noriyukim/Desktop/t/sample17/app/controllers/users_controller.rb:8: syntax error, unexpected ':', expecting end
+    redirect_to : => "index"
+                ^
+/Users/noriyukim/Desktop/t/sample17/app/controllers/users_controller.rb:18: syntax error, unexpected ':', expecting end
+    redirect_to : => "index"
+                ^
+/Users/noriyukim/Desktop/t/sample17/app/controllers/users_controller.rb:28: syntax error, unexpected ':', expecting end
+    redirect_to : => "index"
+                ^):
+  
+app/controllers/users_controller.rb:8: syntax error, unexpected ':', expecting end
+app/controllers/users_controller.rb:18: syntax error, unexpected ':', expecting end
+app/controllers/users_controller.rb:28: syntax error, unexpected ':', expecting end
+Started GET "/users" for ::1 at 2020-03-21 13:30:38 +0900
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/index.html.erb:2
+  Rendered users/index.html.erb within layouts/application (27.2ms)
+Completed 200 OK in 83ms (Views: 62.6ms | ActiveRecord: 10.7ms)
+
+
+Started GET "/users/2/edit" for ::1 at 2020-03-21 13:30:40 +0900
+Processing by UsersController#edit as HTML
+  Parameters: {"authenticity_token"=>"sRukHXMdR+8QCIoB7YoWWrOSc/dSWK0Aclhtxg8f0+kkQBY60Mrqe3BNdoas1NzvL9uj3W95BdxGmVwvXhrKYA==", "id"=>"2"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:22
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/edit.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 33ms (Views: 28.6ms | ActiveRecord: 0.4ms)
+
+
+Started PATCH "/users/2" for ::1 at 2020-03-21 13:30:43 +0900
+Processing by UsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8UWHanYfMfVULdC5PbKQuu3avC4+5miaqW5L7abdZ+ZkHjVN1cicYTRoLD587FoPcZNsBAPHwEadr3oE99h+bw==", "user"=>{"name"=>"田"}, "commit"=>"Update User", "id"=>"2"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:26
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:27
+  [1m[36mUser Update (2.1ms)[0m  [1m[33mUPDATE `users` SET `name` = '田', `updated_at` = '2020-03-21 04:30:43' WHERE `users`.`id` = 2[0m
+  ↳ app/controllers/users_controller.rb:27
+  [1m[35m (3.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:27
+Redirected to http://localhost:3000/users
+Completed 302 Found in 14ms (ActiveRecord: 5.9ms)
+
+
+Started GET "/users" for ::1 at 2020-03-21 13:30:43 +0900
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/index.html.erb:2
+  Rendered users/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 16ms (Views: 14.5ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/users/2" for ::1 at 2020-03-21 13:30:48 +0900
+Processing by UsersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"NEyRB0ykCKWFXF04YQItdOHHcqk6bJv4iEUHRqvYR+KhFyMg73OlMeUZob8gXOfBfY6igwdNMyS8hDav+t1eaw==", "id"=>"2"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:16
+  [1m[36mUser Destroy (7.2ms)[0m  [1m[31mDELETE FROM `users` WHERE `users`.`id` = 2[0m
+  ↳ app/controllers/users_controller.rb:17
+Redirected to http://localhost:3000/users
+Completed 302 Found in 11ms (ActiveRecord: 7.5ms)
+
+
+Started GET "/users" for ::1 at 2020-03-21 13:30:48 +0900
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/index.html.erb:2
+  Rendered users/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 17ms (Views: 15.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/new" for ::1 at 2020-03-21 13:30:50 +0900
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 30ms (Views: 24.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2020-03-21 13:30:53 +0900
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"cK/uQUk153f9a+JfrbGmkFYY1tCNfgvSGxh4xKA1FyWUpGa9fDkU8pOxw4BQta6CnMZ+JRlGFIspGRxJuJhmfQ==", "user"=>{"name"=>"tanaka"}, "commit"=>"Create User"}
+  [1m[35m (1.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:7
+  [1m[36mUser Create (2.2ms)[0m  [1m[32mINSERT INTO `users` (`name`, `created_at`, `updated_at`) VALUES ('tanaka', '2020-03-21 04:30:53', '2020-03-21 04:30:53')[0m
+  ↳ app/controllers/users_controller.rb:7
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:7
+Redirected to http://localhost:3000/users
+Completed 302 Found in 10ms (ActiveRecord: 4.2ms)
+
+
+Started GET "/users" for ::1 at 2020-03-21 13:30:53 +0900
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/index.html.erb:2
+  Rendered users/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 17ms (Views: 14.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/new" for ::1 at 2020-03-21 13:30:55 +0900
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 31ms (Views: 27.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2020-03-21 13:31:00 +0900
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"yk8DSFHziia0BEnABFsoHaDLR53qjMOPo0A3HkAySWMuRIu0ZP95o9reaB/5XyAPahXvaH603NaRQVOTWJ84Ow==", "user"=>{"name"=>"田中ooo"}, "commit"=>"Create User"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:7
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO `users` (`name`, `created_at`, `updated_at`) VALUES ('田中ooo', '2020-03-21 04:31:00', '2020-03-21 04:31:00')[0m
+  ↳ app/controllers/users_controller.rb:7
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:7
+Redirected to http://localhost:3000/users
+Completed 302 Found in 19ms (ActiveRecord: 2.1ms)
+
+
+Started GET "/users" for ::1 at 2020-03-21 13:31:00 +0900
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/index.html.erb:2
+  Rendered users/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 19ms (Views: 17.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2020-03-21 13:47:02 +0900
+  [1m[35m (1.8ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ .bundle/ruby/2.6.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ .bundle/ruby/2.6.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+Processing by Rails::WelcomeController#index as HTML
+  Rendering .bundle/ruby/2.6.0/gems/railties-5.2.4.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered .bundle/ruby/2.6.0/gems/railties-5.2.4.2/lib/rails/templates/rails/welcome/index.html.erb (7.6ms)
+Completed 200 OK in 29ms (Views: 18.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for ::1 at 2020-03-21 13:47:05 +0900
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/index.html.erb:2
+  Rendered users/index.html.erb within layouts/application (34.6ms)
+Completed 200 OK in 395ms (Views: 361.3ms | ActiveRecord: 22.9ms)
+
+
+Started GET "/users/5/edit" for ::1 at 2020-03-21 13:47:07 +0900
+Processing by UsersController#edit as HTML
+  Parameters: {"authenticity_token"=>"5LK/1rknhAI9Sm4bZvgN2CffNHOqwvhlrRgvVj29uBxx6Q3xGvApll0Pkpwnpsdtu5bkWZfjULmZ2R6/bLihlQ==", "id"=>"5"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 5 LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:22
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/edit.html.erb within layouts/application (54.4ms)
+Completed 200 OK in 81ms (Views: 67.1ms | ActiveRecord: 0.3ms)
+
+
+Started PATCH "/users/5" for ::1 at 2020-03-21 13:47:11 +0900
+Processing by UsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KP+KQjZ1UswGpmWUPiGIA6Gz9/NKaCIPf6rKD1330g+9pDhllaL/WGbjmRN/f0K2Pfon2XdJitNLa/vmDPLLhg==", "user"=>{"name"=>"tana"}, "commit"=>"Update User", "id"=>"5"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 5 LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:26
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:27
+  [1m[36mUser Update (4.5ms)[0m  [1m[33mUPDATE `users` SET `name` = 'tana', `updated_at` = '2020-03-21 04:47:11' WHERE `users`.`id` = 5[0m
+  ↳ app/controllers/users_controller.rb:27
+  [1m[35m (7.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:27
+Redirected to http://localhost:3000/users
+Completed 302 Found in 21ms (ActiveRecord: 12.3ms)
+
+
+Started GET "/users" for ::1 at 2020-03-21 13:47:11 +0900
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/index.html.erb:2
+  Rendered users/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 19ms (Views: 16.6ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/users/8" for ::1 at 2020-03-21 13:47:16 +0900
+Processing by UsersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"yhN5Pd9BnucDycofYggKS2x5iNz8QXPZmHKsQuI1C8dfSMsafJYzc2OMNpgjVsD+8DBY9sFg2wWss52rszASTg==", "id"=>"8"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 8 LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:16
+  [1m[36mUser Destroy (8.0ms)[0m  [1m[31mDELETE FROM `users` WHERE `users`.`id` = 8[0m
+  ↳ app/controllers/users_controller.rb:17
+Redirected to http://localhost:3000/users
+Completed 302 Found in 12ms (ActiveRecord: 8.4ms)
+
+
+Started GET "/users" for ::1 at 2020-03-21 13:47:16 +0900
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/index.html.erb:2
+  Rendered users/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 18ms (Views: 16.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/users/6/edit" for ::1 at 2020-03-21 13:47:17 +0900
+Processing by UsersController#edit as HTML
+  Parameters: {"authenticity_token"=>"FJ/B06LE7BSEvJXCHzngIfJpglyB2rY+7jnYWU9m5w+BxHP0ARNBgOT5aUVeZyqUbiBSdrz7HuLa+OmwHmP+hg==", "id"=>"6"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 6 LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:22
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/edit.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 17ms (Views: 14.8ms | ActiveRecord: 0.3ms)
+
+
+Started PATCH "/users/6" for ::1 at 2020-03-21 13:47:20 +0900
+Processing by UsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"iLwOkZy0a0TNV/XbqkTxl4/ARygrVICywnFGzpuinBMd57y2P2PG0K0SCVzrGjsiE4mXAhZ1KG72sHcnyqeFmg==", "user"=>{"name"=>"相田"}, "commit"=>"Update User", "id"=>"6"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 6 LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:26
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:27
+  [1m[36mUser Update (2.4ms)[0m  [1m[33mUPDATE `users` SET `name` = '相田', `updated_at` = '2020-03-21 04:47:20' WHERE `users`.`id` = 6[0m
+  ↳ app/controllers/users_controller.rb:27
+  [1m[35m (2.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:27
+Redirected to http://localhost:3000/users
+Completed 302 Found in 14ms (ActiveRecord: 7.3ms)
+
+
+Started GET "/users" for ::1 at 2020-03-21 13:47:20 +0900
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/index.html.erb:2
+  Rendered users/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 23ms (Views: 20.2ms | ActiveRecord: 0.3ms)
+
+

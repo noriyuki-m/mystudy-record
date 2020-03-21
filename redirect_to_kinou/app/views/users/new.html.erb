@@ -1,0 +1,5 @@
+<h1>hello world</h1>
+<%= form_for @user, url: "/users", html:{method: :post} do |f| %>
+<%= f.text_field :name %>
+<%= f.submit %>
+<% end %>
