@@ -1,0 +1,13 @@
+<p>一覧画面</p>
+<% @users.each do |user| %>
+ <p>  <%= user.name %> </p>
+ <p>  <%= user.age %> </p>
+ <p> <%= link_to '詳細', "/users/#{user.id}", method: :get %> 
+ <%= link_to '削除ボタン', "/users/#{user.id}", method: :delete, data: {confirm: "削除しても良いですか？"} %> 
+ <%= link_to '編集', "/users/#{user.id}/edit", method: :get %>
+ </p>
+ <% end %>
+
+<%= link_to '投稿画面へ', '/users/new'%>
+
+ <%= link_to "CSV", users_path(format: :csv) %>
