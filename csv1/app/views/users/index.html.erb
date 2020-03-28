@@ -1,0 +1,15 @@
+<p>一覧画面</p>
+<% @users.each do |user| %>
+ <p>  <%= user.name %> </p>
+ <p>  <%= user.age %> </p>
+ <% end %>
+
+
+<%= link_to "CSV形式でエクスポート", users_path(format: :csv) %>
+
+
+<%= form_tag import_users_path, multipart: true do %>
+  <%= file_field_tag :file %>
+  <%= submit_tag "インポート" %>
+<% end %>
+
