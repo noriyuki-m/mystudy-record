@@ -5,5 +5,5 @@ class CreateUsers < ActiveRecord::Migration[5.2]
       t.integer       :age
       t.timestamps
     end
-  endd
+  end
 end
