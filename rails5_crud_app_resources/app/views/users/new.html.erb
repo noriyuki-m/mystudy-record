@@ -1,0 +1,10 @@
+<p>新規登録ページ</p>
+
+<%# <%= form_for @user, users_path, html:{method: :post} do |f| %>
+<%# ↑この書き方はいらない %>
+<%= form_with model: @user, local: true do |f| %>
+<%= f.text_field :name %></br>
+<%= f.text_field :age %></br>
+<%= f.submit %></br>
+<% end %>
+<%= link_to '一覧へ', users_path %></br>

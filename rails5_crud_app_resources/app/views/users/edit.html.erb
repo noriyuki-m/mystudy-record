@@ -1,0 +1,9 @@
+<p>編集ページ</p>
+
+<%= form_with model: @user, local: true do |f| %>
+<%= f.text_field :name %></br>
+<%= f.text_field :age %></br>
+<%= f.submit "送信" %></br>
+<% end %>
+
+<%= link_to '一覧へ', users_path %></br>

@@ -1,0 +1,12 @@
+<p>一覧表示</p>
+<% @users.each do |user| %>
+<p>
+<%= user.name %>
+<%= user.age %>
+<%= link_to '削除', user_path(user), method: :delete, data:{confrim:"削除しますか？"} %>
+<%= link_to '編集', edit_user_path(user), method: :get %>
+</p>
+<% end %>
+<p>
+<%= link_to '投稿', new_user_path %>
+</p>
